@@ -21,4 +21,9 @@ describe('Paint', function() {
     it('should be able to check if it is empty (is empty)', function () {
         assert.strictEqual(true, paint2.isEmpty());
     });
+
+    it('should be able to empty itself of paint', function () {
+        paint.empty();
+        assert.strictEqual(0, paint.litres);
+    });
 });
