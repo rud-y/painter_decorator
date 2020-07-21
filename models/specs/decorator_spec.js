@@ -1,14 +1,17 @@
 const assert = require("assert");
 const Decorator = require("../decorator");
 const Paint = require("../paint");
+const Room = require("../room")
 
 describe("Decorator", function () {
     let decorator;
     let paint;
+    let room;
 
     beforeEach( function () {
         decorator = new Decorator();
         paint = new Paint(50);
+        room = new Room(60);
     });
 
     it("should start with an empty paint stock", function () {
@@ -24,5 +27,15 @@ describe("Decorator", function () {
         decorator.addPaint(paint);
         decorator.addPaint(paint);
         assert.strictEqual(100, decorator.totalStockVolume());
+    });
+
+    it("should be able to calculate wether it has enough paint to paint a room(not enough)", function() {
+        assert.strictEqual(false, decorator.hasEnoughPaint(room));
+    });
+
+    it("should be able to calculate wether it has enough paint to paint a room(has enough)", function() {
+        decorator.addPaint(paint);
+        decorator.addPaint(paint);
+        assert.strictEqual(true, decorator.hasEnoughPaint(room));
     });
 });
