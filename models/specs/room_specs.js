@@ -16,7 +16,7 @@ describe("Room", function () {
         assert.strictEqual(0, room.areaPainted);
     });
 
-    xit("should be able to be painted", function () {
+    it("should be able to be painted", function () {
         room.paint(5);
         assert.strictEqual(5, room.areaPainted);
     });
