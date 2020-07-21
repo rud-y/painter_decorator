@@ -18,5 +18,10 @@ Decorator.prototype.hasEnoughPaint = function (room) {
     return this.totalStockVolume() >= room.area;
 };
 
+Decorator.prototype.paintRoom = function (room) {
+    if (this.hasEnoughPaint(room)) {
+        room.paint(room.area);
+    }
+};
 
 module.exports = Decorator;
