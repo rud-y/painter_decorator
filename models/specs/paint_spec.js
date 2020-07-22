@@ -26,4 +26,9 @@ describe('Paint', function() {
         paint.empty();
         assert.strictEqual(0, paint.litres);
     });
+
+    it("should be able to  decrease amount of paint", function () {
+        paint.reduce(6);
+        assert.strictEqual(4, paint.litres);
+    });
 });

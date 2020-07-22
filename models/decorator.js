@@ -24,4 +24,12 @@ Decorator.prototype.paintRoom = function (room) {
     }
 };
 
+// Decorator.prototype.decreasePaintStock = function () {
+//     this.paintRoom(room);
+    
+//     }
+// };
+
+
+
 module.exports = Decorator;

@@ -1,7 +1,7 @@
 const assert = require("assert");
 const Decorator = require("../decorator");
 const Paint = require("../paint");
-const Room = require("../room")
+const Room = require("../room");
 
 describe("Decorator", function () {
     let decorator;
@@ -45,4 +45,13 @@ describe("Decorator", function () {
         decorator.paintRoom(room);
         assert.strictEqual(60, room.areaPainted);
     });
+
+    // it("should be able to decrease the amount of paint in stock when painting room", function() {
+    //     decorator.addPaint(paint);
+    //     decorator.addPaint(paint);
+    //     decorator.paintRoom(room);
+    //     decorator.decreasePaintStock();
+    //     assert.deepStrictEqual(40, decorator.totalStockVolume());
+    // });
+
 });

@@ -1,7 +1,6 @@
 {
   "name": "painter_decorator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha models/specs"
@@ -11,5 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rud-y/painter_decorator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rud-y/painter_decorator/issues"
+  },
+  "homepage": "https://github.com/rud-y/painter_decorator#readme",
+  "description": ""
 }
