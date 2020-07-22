@@ -24,11 +24,12 @@ Decorator.prototype.paintRoom = function (room) {
     }
 };
 
-// Decorator.prototype.decreasePaintStock = function () {
-//     this.paintRoom(room);
-    
-//     }
-// };
+Decorator.prototype.decreasePaintStock = function () {
+    this.paintRoom(room);
+    this.totalStockVolume();
+};
+
+
 
 
 

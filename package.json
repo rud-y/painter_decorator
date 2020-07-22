@@ -6,7 +6,7 @@
     "test": "mocha models/specs"
   },
   "keywords": [],
-  "author": "",
+  "author": "rz",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^8.0.1"
